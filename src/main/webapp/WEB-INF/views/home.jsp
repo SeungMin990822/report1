@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: nykim
-  Date: 2022/12/13
-  Time: 12:55 오전
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -13,8 +6,17 @@
     <title>$Title$</title>
   </head>
   <body>
-    <p> <a href="${pageContext.request.contextPath}/offers"> Show current offers</a></p>
-    <p> <a href="${pageContext.request.contextPath}/createoffer"> Add a new offer</a></p>
+  <h1>학사 정보 시스템 </h1>
+  <div>
+    <button>로그인</button>
+  </div>
+  <table border="1">
+    <tr>
+      <td><a href="${pageContext.request.contextPath}/offers">학년별 이수학점 조회</a></td>
+      <td><a href="${pageContext.request.contextPath}/createoffer">수강 신청하기</a></td>
+      <td><a href="${pageContext.request.contextPath}/enrolls">수강 신청 조회하기</a></td>
+    </tr>
+  </table>
 
     <c:if test="${pageContext.request.userPrincipal.name != null}">
       <a href="javascript:document.getElementById('logout').submit()">Logout</a>
