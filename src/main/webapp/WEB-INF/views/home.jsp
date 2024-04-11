@@ -13,7 +13,8 @@
   <table border="1">
     <tr>
       <td><a href="${pageContext.request.contextPath}/informations">학년별 이수학점 조회</a></td>
-      <td><a href="${pageContext.request.contextPath}/createoffer">수강 신청하기</a></td>
+      <td><a href="${pageContext.request.contextPath}/createoffer">오퍼신청</a></td>
+      <td><a href="${pageContext.request.contextPath}/createEnroll">수강 신청하기</a></td>
       <td><a href="${pageContext.request.contextPath}/enrolls">수강 신청 조회하기</a></td>
     </tr>
   </table>

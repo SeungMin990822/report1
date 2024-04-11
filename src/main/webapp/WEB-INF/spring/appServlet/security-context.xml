@@ -16,11 +16,13 @@
         <security:intercept-url pattern="/" access="permitAll()"/>
         <security:intercept-url pattern="/login" access="permitAll()"/>
         <security:intercept-url pattern="/offers" access="permitAll()"/>
-        <security:intercept-url pattern="/createoffer" access="hasRole('ROLE_USER')"/>
+        <security:intercept-url pattern="/createoffer" access="permitAll()"/>
         <security:intercept-url pattern="/docreate" access="hasRole('ROLE_USER')"/>
         <security:intercept-url pattern="/resources/**" access="permitAll()"/>
         <security:intercept-url pattern="/enrolls" access="permitAll()"/>
         <security:intercept-url pattern="/informations" access="permitAll()"/>
+        <security:intercept-url pattern="/createEnroll" access="permitAll()"/>
+        <security:intercept-url pattern="/docreateEnroll" access="permitAll()"/>
         <security:intercept-url pattern="/**" access="denyAll()"/>
 
         <security:form-login login-page="/login"/>
