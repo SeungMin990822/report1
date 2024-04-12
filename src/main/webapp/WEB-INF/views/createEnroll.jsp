@@ -17,7 +17,11 @@
         </tr>
         <tr>
             <td class="label"> 학기:</td>
-            <td><sf:input class="control" type="text" path="semester"/>  <br/>
+            <td><sf:select path="semester" class="control">
+                <sf:option value="">-- 선택 --</sf:option>
+                <sf:option value="1">1</sf:option>
+                <sf:option value="2">2</sf:option>
+            </sf:select> <br/>
                 <sf:errors path="semester" class="error"/>
             </td>
         </tr>
@@ -29,7 +33,15 @@
         </tr>
         <tr>
             <td class="label"> 교과구분:</td>
-            <td><sf:input class="control" type="text" path="status"/> <br/>
+            <td><sf:select path="status" class="control">
+                <sf:option value="">-- 선택 --</sf:option>
+                <sf:option value="전선">전선</sf:option>
+                <sf:option value="전필">전필</sf:option>
+                <sf:option value="토대">토대</sf:option>
+                <sf:option value="필교">필교</sf:option>
+                <sf:option value="일교">일교</sf:option>
+                <sf:option value="핵심">핵심</sf:option>
+            </sf:select> <br/>
                 <sf:errors path="status" class="error" />
             </td>
         </tr>

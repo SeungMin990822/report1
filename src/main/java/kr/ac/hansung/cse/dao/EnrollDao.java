@@ -35,7 +35,7 @@ public class EnrollDao {
                         Enroll enroll = new Enroll();
 
                         enroll.setYear(rs.getInt("year"));
-                        enroll.setSemester(rs.getInt("semester"));
+                        enroll.setSemester(rs.getString("semester"));
                         enroll.setTitle(rs.getString("title"));
                         enroll.setStatus(rs.getString("status"));
                         enroll.setName(rs.getString("name"));
@@ -54,7 +54,7 @@ public class EnrollDao {
                 Enroll enroll = new Enroll();
 
                 enroll.setYear(rs.getInt("year"));
-                enroll.setSemester(rs.getInt("semester"));
+                enroll.setSemester(rs.getString("semester"));
                 enroll.setTitle(rs.getString("title"));
                 enroll.setStatus(rs.getString("status"));
                 enroll.setName(rs.getString("name"));
